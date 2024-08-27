@@ -1,55 +1,112 @@
-# Big Foot CA
+# Big Foot CA - Agile Project Implementation
 
-## README
+## Table of Contents
+1. [Project Overview](#project-overview)
+2. [Documentation](#documentation)
+   - [1. Big Foot CA Overview](#1-big-foot-ca-overview)
+   - [2. Mid Term Project Structure](#2-mid-term-project-structure)
+3. [Agile Methodology](#agile-methodology)
+   - [User Stories](#user-stories)
+   - [Sprint Planning](#sprint-planning)
+4. [Algorithmic Implementation](#algorithmic-implementation)
+   - [Fetching and Displaying Products](#fetching-and-displaying-products)
+   - [Adding and Removing Items from Cart](#adding-and-removing-items-from-cart)
+5. [Project Structure](#project-structure)
+   - [Folder Structure](#folder-structure)
+   - [Implementation Steps](#implementation-steps)
+6. [Getting Started](#getting-started)
+7. [Tools and Configuration](#tools-and-configuration)
+8. [Testing](#testing)
+9. [Deployment](#deployment)
+10. [Final Touches](#final-touches)
 
-Welcome to Big Foot CA, the ultimate online sneaker marketplace where affordability meets style!
+---
 
-### About Us
+## Project Overview
 
-Big Foot CA is an e-commerce startup revolutionizing the way people buy and sell sneakers. Our mission is to provide a platform where sneaker enthusiasts can connect, discover, and purchase affordable shoes while promoting a sustainable and community-driven approach to fashion.
+**Big Foot CA** is the ultimate online sneaker marketplace where affordability meets style. Our mission is to revolutionize the sneaker buying and selling experience by providing an affordable, sustainable, and community-driven platform for sneaker enthusiasts.
 
-### The Problem
+## Documentation
 
-We believe that the traditional sneaker market is broken. High prices, limited availability, and a lack of transparency have created a barrier for many to access the shoes they love. That's why we're on a mission to change the game.
+### 1. Big Foot CA Overview
 
-### Our Solution
+#### 1.1 About Us
 
-Big Foot CA is an online marketplace that connects buyers and sellers of new and gently used sneakers. Our platform offers:
+Big Foot CA is an e-commerce startup that connects buyers and sellers of new and gently used sneakers. We aim to provide a platform offering affordable prices, a wide selection, and a community-driven environment to promote sustainable fashion.
 
-* **Affordable Prices**: We believe that everyone deserves access to stylish shoes without breaking the bank.
-* **Wide Selection**: Our marketplace features a vast collection of sneakers from various brands, ensuring you'll find the perfect pair.
-* **Community-Driven**: Our platform is built around a community of sneaker enthusiasts, providing a space to connect, share, and discover new kicks.
-* **Sustainable Fashion**: By promoting the reuse and recycling of sneakers, we're reducing waste and supporting a more environmentally friendly approach to fashion.
+#### 1.2 The Problem
 
-### Features
+The traditional sneaker market is plagued by high prices, limited availability, and lack of transparency, making it difficult for enthusiasts to access the sneakers they love.
 
-* **User Profiles**: Create your own profile, showcase your sneaker collection, and connect with like-minded individuals.
-* **Listing System**: Easily list your sneakers for sale, and browse through our vast collection of available shoes.
-* **Rating and Review System**: Ensure a safe and trustworthy community by rating and reviewing transactions.
-* **Secure Payment Gateway**: Our platform features a secure payment system, protecting both buyers and sellers.
+#### 1.3 Our Solution
 
-### Technology Stack
+- **Affordable Prices**: Making stylish sneakers accessible without breaking the bank.
+- **Wide Selection**: Offering a vast collection from various brands to ensure the perfect pair for everyone.
+- **Community-Driven**: Building a space for sneaker enthusiasts to connect, share, and discover new kicks.
+- **Sustainable Fashion**: Promoting the reuse and recycling of sneakers to reduce waste and support environmentally friendly fashion.
 
-Our team leverages the latest technology to deliver a seamless user experience:
+#### 1.4 Features
 
-* **Frontend**: Built using React, our frontend provides a fast, responsive, and intuitive interface.
-* **Backend**: Our backend is powered by Node.js, ensuring a scalable and secure architecture.
-* **Database**: We use a robust database system to store and manage our vast collection of sneakers.
+- **User Profiles**: Create and showcase your sneaker collection, connect with others.
+- **Listing System**: Easily list your sneakers for sale and browse available shoes.
+- **Rating and Review System**: Maintain a safe and trustworthy community by rating and reviewing transactions.
+- **Secure Payment Gateway**: Ensure secure transactions for both buyers and sellers.
 
-### Join the Movement
+### 2. Mid Term Project Structure
 
-At Big Foot CA, we're committed to creating a more accessible, sustainable, and community-driven sneaker market. Join us in our mission to revolutionize the way people buy and sell sneakers.
+#### 2.1 Description
 
-### Get in Touch
+Create a fake shop using Object-Oriented Programming (OOP). Implement various classes and functionalities to build the shop.
 
-Want to learn more about Big Foot CA or have a question about our platform? Contact us at [info@bigfootca.com](mailto:info@bigfootca.com) or follow us on social media:
+#### 2.2 Objectives
 
-* Twitter: [@bigfootca](https://twitter.com/bigfootca)
-* Instagram: [@bigfootca](https://www.instagram.com/bigfootca/)
-* Facebook: [@bigfootca](https://www.facebook.com/bigfootca/)
+- Create one file per class and import where needed.
+- Show a list of products from an API with image, title, price, and description.
+- Enable adding products to the cart.
+- Display the total amount of the cart.
 
-### Stay Updated
+#### 2.3 Requirements
 
-Subscribe to our newsletter to stay informed about the latest sneaker releases, promotions, and community news:
+- **ESLint**
+- **Prettier**
+- **Husky**
+- **Jest**
+- **GitHub Actions**
 
-[Subscribe Now](https://bigfootca.com/newsletter)
+#### 2.4 Agile Methodology
+
+##### 2.4.1 User Stories
+
+1. **User Story 1:** As a user, I want to browse through a wide selection of sneakers.
+2. **User Story 2:** As a user, I want to add sneakers to my cart.
+3. **User Story 3:** As a user, I want to view the total price of items in my cart.
+4. **User Story 4:** As a user, I want to increase or decrease the quantity of sneakers in my cart.
+5. **User Story 5:** As a user, I want to securely check out and complete my purchase.
+
+##### 2.4.2 Sprint Planning
+
+- **Sprint 1:** Setup Project, Implement Basic Classes (`ProductItem`, `ProductList`), Fetch and Display Products.
+- **Sprint 2:** Implement Cart Functionality (`Cart`, `CartItem`, `CartItemList`), Add and Remove Items from Cart.
+- **Sprint 3:** Create User Profiles, Implement Secure Payment Gateway, Test Core Functionalities.
+- **Sprint 4:** Final Testing, Bug Fixes, and Deployment.
+
+---
+
+## Algorithmic Implementation
+
+### Fetching and Displaying Products
+
+```javascript
+// src/services/ApiService.js
+class ApiService {
+    static async fetchProducts() {
+        const response = await fetch('https://fakestoreapi.com/products');
+        if (!response.ok) {
+            throw new Error('Failed to fetch products');
+        }
+        const data = await response.json();
+        return data;
+    }
+}
+
+export default ApiService;
