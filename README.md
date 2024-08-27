@@ -28,27 +28,11 @@ Big Foot CA is an online marketplace that connects buyers and sellers of new and
 * **Rating and Review System**: Ensure a safe and trustworthy community by rating and reviewing transactions.
 * **Secure Payment Gateway**: Our platform features a secure payment system, protecting both buyers and sellers.
 
-### Technology Stack
-
-Our team leverages the latest technology to deliver a seamless user experience:
-
-* **Frontend**: Built using React, our frontend provides a fast, responsive, and intuitive interface.
-* **Backend**: Our backend is powered by Node.js, ensuring a scalable and secure architecture.
-* **Database**: We use a robust database system to store and manage our vast collection of sneakers.
 
 ### Join the Movement
 
 At Big Foot CA, we're committed to creating a more accessible, sustainable, and community-driven sneaker market. Join us in our mission to revolutionize the way people buy and sell sneakers.
 
-### Get in Touch
-
-Want to learn more about Big Foot CA or have a question about our platform? Contact us at [info@bigfootca.com](mailto:info@bigfootca.com) or follow us on social media:
-
-* Twitter: [@bigfootca](https://twitter.com/bigfootca)
-* Instagram: [@bigfootca](https://www.instagram.com/bigfootca/)
-* Facebook: [@bigfootca](https://www.facebook.com/bigfootca/)
-
-### Stay Updated
 
 Subscribe to our newsletter to stay informed about the latest sneaker releases, promotions, and community news:
 
