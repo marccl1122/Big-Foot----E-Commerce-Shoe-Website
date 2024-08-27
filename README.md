@@ -40,33 +40,9 @@ The traditional sneaker market is plagued by high prices, limited availability, 
 
 #### 1.3 Our Solution
 
-- **Affordable Prices**: Making stylish sneakers accessible without breaking the bank.
-- **Wide Selection**: Offering a vast collection from various brands to ensure the perfect pair for everyone.
-- **Community-Driven**: Building a space for sneaker enthusiasts to connect, share, and discover new kicks.
-- **Sustainable Fashion**: Promoting the reuse and recycling of sneakers to reduce waste and support environmentally friendly fashion.
-
-#### 1.4 Features
-
-- **User Profiles**: Create and showcase your sneaker collection, connect with others.
-- **Listing System**: Easily list your sneakers for sale and browse available shoes.
-- **Rating and Review System**: Maintain a safe and trustworthy community by rating and reviewing transactions.
-- **Secure Payment Gateway**: Ensure secure transactions for both buyers and sellers.
-
 ### 2. Mid Term Project Structure
 
 #### 2.1 Description
-
-Create a fake shop using Object-Oriented Programming (OOP). Implement various classes and functionalities to build the shop.
-
-#### 2.2 Objectives
-
-- Create one file per class and import where needed.
-- Show a list of products from an API with image, title, price, and description.
-- Enable adding products to the cart.
-- Display the total amount of the cart.
-
-#### 2.3 Requirements
-
 - **ESLint**
 - **Prettier**
 - **Husky**
